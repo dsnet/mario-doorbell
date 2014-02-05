@@ -55,13 +55,13 @@ void interrupt() {
     if (INTCON.T0IF) {
         // Toggle between the digits on the 7-segment display
         if (toggle == 0) {
-            PORTB.F1 = 0;
-            PORTB.F2 = 1;
+            PORTB.F1 = 1; // Disable PMOS
+            PORTB.F2 = 0; // Enable PMOS
             PORTA = LO_SEGMENT[lo_num];
             toggle = 1;
         } else {
-            PORTB.F2 = 0;
-            PORTB.F1 = 1;
+            PORTB.F2 = 1; // Disable PMOS
+            PORTB.F1 = 0; // Enable PMOS
             PORTA = HI_SEGMENT[hi_num];
             toggle = 0;
         }
