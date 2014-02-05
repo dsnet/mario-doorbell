@@ -1,0 +1,32 @@
+[DeviceName]
+Value=P16F687
+[DeviceClock]
+Value=20
+[MainUnit]
+Value=
+[DeviceFlags]
+Count=7
+Value0=_BOR_OFF = $3CFF
+Value1=_CPD_OFF = $3FFF
+Value2=_CP_OFF = $3FFF
+Value3=_MCLRE_OFF = $3FDF
+Value4=_PWRTE_ON = $3FEF
+Value5=_WDT_OFF = $3FF7
+Value6=_HS_OSC = $3FFA
+[BuildType]
+bType=0
+[ProjectFiles]
+Count=1
+Value0=door_ringer.c
+[HeaderFiles]
+Count=0
+[ObjLibFiles]
+Count=0
+[PLDFiles]
+Count=0
+[EEPROMinfo]
+isused=0
+[SearchPath]
+Count=0
+[IncludePath]
+Count=0

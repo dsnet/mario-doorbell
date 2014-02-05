@@ -1,0 +1,30 @@
+[DeviceName]
+Value=P16F628A
+[DeviceClock]
+Value=4
+[MainUnit]
+Value=
+[DeviceFlags]
+Count=5
+Value0=_PWRTE_ON = $3FF7
+Value1=_WDT_OFF = $3FFB
+Value2=_LVP_OFF = $3F7F
+Value3=_MCLRE_OFF = $3FDF
+Value4=_INTRC_OSC_NOCLKOUT = $3FFC
+[BuildType]
+bType=0
+[ProjectFiles]
+Count=1
+Value0=door_button.c
+[HeaderFiles]
+Count=0
+[ObjLibFiles]
+Count=0
+[PLDFiles]
+Count=0
+[EEPROMinfo]
+isused=0
+[SearchPath]
+Count=0
+[IncludePath]
+Count=0

@@ -1,0 +1,33 @@
+Begin processing...
+
+Wave 0: sounds/coin.wav
+    Data offset: 0x00000000
+    Data length: 0x000046BE
+    Sample rate: 22050
+    
+Wave 1: sounds/life-up.wav
+    Data offset: 0x000046BE
+    Data length: 0x000042F0
+    Sample rate: 22050
+    
+Wave 2: sounds/mushroom.wav
+    Data offset: 0x000089AE
+    Data length: 0x00005053
+    Sample rate: 22050
+    
+Wave 3: sounds/mario.wav
+    Data offset: 0x0000DA01
+    Data length: 0x000050C9
+    Sample rate: 11025
+    
+Wave 4: sounds/outta-time.wav
+    Data offset: 0x00012ACA
+    Data length: 0x00007DC1
+    Sample rate: 11025
+    
+Wave 5: sounds/down-pipe.wav
+    Data offset: 0x0001A88B
+    Data length: 0x00000FD2
+    Sample rate: 22050
+    
+Finish processing...
