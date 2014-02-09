@@ -12,6 +12,13 @@ notice you.
 
 [![chart-error](http://code.digital-static.net/mario-doorbell/raw/tip/media/door-button.jpg)](http://www.youtube.com/watch?v=j20RfiTt6zI)
 
+Basically, every time a guest presses the coin button, the counter displayed
+will increment and the coin sound from Mario will be played. As a special
+bonus, every 10 coins will cause the life-up sound to be played, and every 100
+coins will cause the mushroom upgrade sound to be played. Technically, the
+life-up sound should have been for every 100 coins, but the mushroom upgrade
+sound was so obnoxiously loud and long, that I switched those two clips.
+
 
 ## Implementation ##
 
