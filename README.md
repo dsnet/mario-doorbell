@@ -41,10 +41,10 @@ shown below. The image of the coin itself is the button that guests press.
 
 The door ringer is built on a PIC16F687 microcontroller connected to a MCP4822
 DAC and a 25LC1024 EEPROM. When the MCU receives a signal over UART from the
-button, it will play the sound clip by reading sample bytes out of the EEPROM
-chip and feed it into the DAC chip. The door ringer does not have any speakers,
-so it is necessary to plug an external speaker into the audio jack port on the
-circuit board.
+button, it will play the requested sound clip by reading sample bytes out of the
+EEPROM chip via a SPI bus and and feed the data into the DAC chip. The door
+ringer does not have any speakers, so it is necessary to plug an external
+speaker into the audio jack port on the circuit board.
 
 
 ## File Structure ##
