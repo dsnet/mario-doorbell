@@ -47,7 +47,7 @@ button, it will play the sound clip by reading sample bytes out of the EEPROM
 chip and feed it into the DAC chip. The circuit board for this portion of the
 project is shown below:
 
-![door-ringer-board](http://code.digital-static.net/mario-doorbell/raw/tip/board/door_ringer.png =50%x50%)
+![door-ringer-board](http://code.digital-static.net/mario-doorbell/raw/tip/board/door_ringer.png =50x50)
 
 The door ringer does not have any speakers, so it is necessary to plug an
 external into the audio jack port on the circuit board.
