@@ -87,7 +87,7 @@ void main() {
     PORTB = 0x00;
     TRISA = 0x00;
     TRISB = 0x21;
-    CMCON = 0x07; //Disable analog comparators
+    CMCON = 0x07; // Disable analog comparators
     OPTION_REG = 0x04;
 
     // Initialize variables
