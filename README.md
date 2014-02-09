@@ -11,6 +11,7 @@ even be at your door to visit you, they'll be too busy racking up coins to even
 notice you.
 
 [![door-button](http://code.digital-static.net/mario-doorbell/raw/tip/media/door-button.jpg)](http://www.youtube.com/watch?v=j20RfiTt6zI)
+(Click above image for demonstration video)
 
 Basically, every time a guest presses the coin button, the counter displayed
 will increment and the coin sound from Mario will be played. As a special
