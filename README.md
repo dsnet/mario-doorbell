@@ -16,10 +16,10 @@ notice you.
 
 ## File Structure ##
 
-* **board/**: Circuit board schematics or PCB layouts
-* **doc/**: Documentation related files
-* **media/**: Multimedia files such as photographs or decals
-* **mikroc/**: C sub-projects targeted at the microcontroller realm
+* **board**: Circuit board schematics or PCB layouts
+* **doc**: Documentation related files
+* **media**: Multimedia files such as photographs or decals
+* **mikroc**: C sub-projects targeted at the microcontroller realm
 * **mikroc/door_button**: Project for controlling the door button
 * **mikroc/door_ringer**: Project for playing sound samples as the door ringer
 * **mikroc/hex_convert**: Program to convert Wave files to EEPROM hex dump
