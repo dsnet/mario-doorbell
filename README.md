@@ -36,7 +36,8 @@ The door button basically comprises of a PIC16F628A microcontroller connected to
 a dual 7-segment LED display. I tried to keep the costs of this portion as low
 as possible in the unfortunate event that someone steals my precious doorbell.
 The ugliness of circuit board and electronics is masked by a Mario themed decal
-shown below. The image of the coin itself is the button that guests press.
+based on art from Yoshi's Island. The image of the coin itself is the button
+that guests press to earn coins.
 
 ![decal](http://code.digital-static.net/mario-doorbell/raw/tip/media/decal.png)
 
