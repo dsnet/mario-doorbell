@@ -7,7 +7,7 @@ Project name:
     Mario Doorbell Project - Door button
 Description:
     This firmware code implements the button for the doorbell. The idea is to
-    have a button that, when pressed, increments a two digit 7-Segment display.
+    have a button that, when pressed, increments a two digit 7-segment display.
     Normally, for every press, the Mario coin sound will be played as the
     doorbell ringer. For every 10 presses, the 1-Up sound will be played, and
     for every 100 presses, the mushroom power-up sound will be played.
@@ -18,7 +18,7 @@ Description:
 Configuration:
     Microcontroller:   PIC16F628A
     Oscillator:        INT_RC, 4.00 MHz
-    External modules:  7-Segment Display
+    External modules:  7-segment Display
     Compiler:          MikroC 8.0
 Notes:
     The reason why hardware USART was not used is because the sound generator
@@ -33,7 +33,7 @@ Notes:
 
 /* Global constants */
 const unsigned short LO_SEGMENT[10] = {
-    0x02, 0x8F, 0x44, 0x50, 0x98, 0x11, 0x01, 0x5A, 0x00, 0x10,
+    0x02, 0xDA, 0x44, 0x50, 0x98, 0x11, 0x01, 0x5A, 0x00, 0x10,
 };
 const unsigned short HI_SEGMENT[10] = {
     0xDF, 0xDA, 0x44, 0x50, 0x98, 0x11, 0x01, 0x5A, 0x00, 0x10,
