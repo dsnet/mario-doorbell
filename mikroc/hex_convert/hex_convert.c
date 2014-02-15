@@ -13,6 +13,7 @@
 /* Helper macros */
 #define FUNC_RETURN(fn, rc) { fn(); return rc; }
 #define FUNC_PRINT_RETURN(fn, st, rc) { fn(); printf(st); return rc; }
+#define IS_POWER_2(d) (((d) & ((d)-1)) == 0)
 
 
 /* Struct definitions */
@@ -55,8 +56,8 @@ const char help_msg[] = (
 );
 
 
-int get_user_input(char*** _wav_files, int* _num_files);
-int process_wav_file(HexFile* hf, const char* wav_file, int wav_idx);
+int get_input(char*** _wav_files, int* _num_files);
+int process_wavfile(HexFile* hf, const char* wav_file, int wav_idx);
 HexFile* hexfile_open(const char* filename);
 size_t hexfile_tell(HexFile* hf);
 int hexfile_write(HexFile* hf, void* buf, size_t size);
@@ -82,7 +83,7 @@ int main(int argc, char* argv[]) {
         wav_files = &argv[1];
         num_files = argc-1;
     } else {
-        if (get_user_input(&wav_files, &num_files))
+        if (get_input(&wav_files, &num_files))
             FUNC_RETURN(ret_func, -1);
     }
 
@@ -94,7 +95,7 @@ int main(int argc, char* argv[]) {
     // Process each wave file
     printf("Begin processing...\n\n");
     for (scan = 0; scan < num_files; scan++)
-        if (process_wav_file(hex_file, wav_files[scan], scan))
+        if (process_wavfile(hex_file, wav_files[scan], scan))
             FUNC_RETURN(ret_func, -1);
     printf("Finish processing...\n");
 
@@ -112,7 +113,7 @@ int main(int argc, char* argv[]) {
 // will allocate an array for wav_files and report the number
 // of filenames present in the array. It is the callee's
 // responsibility to free the array.
-int get_user_input(char*** _wav_files, int* _num_files) {
+int get_input(char*** _wav_files, int* _num_files) {
     int num_files = 0;
     char** wav_files = NULL;
     void ret_func() {
@@ -142,7 +143,7 @@ int get_user_input(char*** _wav_files, int* _num_files) {
             num_files++;
 
             // If num_files is power of two, then expand array
-            if ((num_files & (num_files-1)) == 0) {
+            if (IS_POWER_2(num_files)) {
                 void* ptr = wav_files;
                 wav_files = realloc(ptr, 2*num_files*sizeof(uintptr_t));
                 if (wav_files == NULL) {
@@ -163,7 +164,7 @@ int get_user_input(char*** _wav_files, int* _num_files) {
 
 // Opens wav_file, parses it as a WAVE file, and then dumps the
 // sound samples into hex_file.
-int process_wav_file(HexFile* hex_file, const char* wav_file, int wav_idx) {
+int process_wavfile(HexFile* hex_file, const char* wav_file, int wav_idx) {
     WaveHeader wav_hdr;
     FormatChunk fmt_chk;
     DataChunk data_chk;
