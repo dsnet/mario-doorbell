@@ -10,7 +10,7 @@ frequency of ding-dong ditchers or your money back! In fact, your guests won't
 even be at your door to visit you, they'll be too busy racking up coins to even
 notice you.
 
-[![door-button](http://code.digital-static.net/mario-doorbell/raw/tip/media/door-button.jpg)](http://www.youtube.com/watch?v=j20RfiTt6zI)
+[![doorbell-demo](http://code.digital-static.net/mario-doorbell/raw/tip/media/door-button.jpg)](http://www.youtube.com/watch?v=j20RfiTt6zI)
 (Click above image for demonstration video)
 
 Basically, every time a guest presses the coin button, the counter displayed
@@ -58,4 +58,3 @@ speaker into the audio jack port on the circuit board.
 * **mikroc/door_button**: Project for controlling the door button
 * **mikroc/door_ringer**: Project for playing sound samples as the door ringer
 * **mikroc/hex_convert**: Program to convert Wave files to EEPROM hex dump
-
