@@ -49,7 +49,7 @@ ringer does not have any speakers, so it is necessary to plug an external
 speaker into the audio jack port on the circuit board.
 
 
-## File Structure ##
+## Folder Structure ##
 
 * **board**: Circuit board schematics or PCB layouts
 * **doc**: Documentation related files
