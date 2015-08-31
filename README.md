@@ -10,7 +10,7 @@ frequency of ding-dong ditchers or your money back! In fact, your guests won't
 even be at your door to visit you, they'll be too busy racking up coins to even
 notice you.
 
-[![doorbell-demo](http://bitbucket.org/rawr/mario-doorbell/raw/tip/media/door-button.jpg)](http://www.youtube.com/watch?v=j20RfiTt6zI)
+[![doorbell-demo](media/door-button.jpg)](http://www.youtube.com/watch?v=j20RfiTt6zI)
 (Click above image for demonstration video)
 
 Basically, every time a guest presses the coin button, the counter displayed
@@ -30,7 +30,7 @@ door ringer that sits inside the apartment and is responsible for listening for
 the sound clip to play and to generate the audio signal for the selected sound
 clip. The interaction between the two sub-projects is as shown:
 
-![diagram](http://bitbucket.org/rawr/mario-doorbell/raw/tip/doc/diagram_lite.png)
+![diagram](doc/diagram_lite.png)
 
 The door button basically comprises of a PIC16F628A microcontroller connected to
 a dual 7-segment LED display. I tried to keep the costs of this portion as low
@@ -39,7 +39,7 @@ The ugliness of circuit board and electronics is masked by a Mario themed decal
 based on art from Yoshi's Island. The image of the coin itself is the button
 that guests press to earn coins.
 
-![decal](http://bitbucket.org/rawr/mario-doorbell/raw/tip/media/decal.png)
+![decal](media/decal.png)
 
 The door ringer is built on a PIC16F687 microcontroller connected to a MCP4822
 DAC and a 25LC1024 EEPROM. When the MCU receives a signal over UART from the
